@@ -1,0 +1,92 @@
+/* *{
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Roboto', sans-serif;
+} */
+
+body {
+    background-color: rgb(109, 217, 253);
+}
+
+.tituloRegiones {
+    text-align: center;
+    color: rgb(74, 74, 74);
+}
+
+.map-container {
+    max-width: 20%;
+    margin: auto;
+}
+
+.map-container path {
+    fill: orange;
+    stroke: antiquewhite;
+    stroke-width: 4px;
+    transition: fill 0.3s;
+}
+
+.map-container :hover {
+    fill: rgb(230, 138, 26);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    width: 150px;
+    background-color: #f2f2f2; 
+}
+
+table td {
+    width: calc(100% - 150px); 
+}
+
+.saveButton {
+    margin-top: 15px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.saveButton:hover {
+    background-color: rgb(255, 232, 141);
+}
